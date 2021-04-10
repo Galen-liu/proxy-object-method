@@ -144,7 +144,8 @@ function result:  true
   Proxy-object-method use the name of function to store result and will ignore the result without name.
 
 # API
-- proxyObjMethod.prefix(methodName, prefixFuncs, [conditionFn])
+### proxyObjMethod.prefix(methodName, prefixFuncs, [conditionFn])
+
   Add one or multi prefix function.
 
   Prefix-function will be executed with method's arguments and other front prefix-function's result map. The result map of prefix-function will look like:
@@ -152,11 +153,12 @@ function result:  true
 
   if there are multi prefix-function, then they will be concurrently executed.
 
-- proxyObjMethod.rear(methodName, rearFuncs, [conditionFn])
+### proxyObjMethod.rear(methodName, rearFuncs, [conditionFn])
+
   Add one or multi rear function. 
 
   The rear-function works almost as same as prefix-function.
 
-- proxyObjMethod.end()
+### proxyObjMethod.end()
   Return the proxy object.
   The object is single for proxyObjMethod
