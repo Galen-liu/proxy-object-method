@@ -1,31 +1,3 @@
-/*
-example: 
-const ProxyObjMethod = require('proxy-object-method')
-const target = {
-  main () {
-    console.log('main')
-    return true;
-  }
-}
-
-const newTarget = new ProxyObjMethod(target)
- .rear('main', function b (ret) {console.log('rear1: ' + JSON.stringify(ret)); return 'rear1';})
- .rear('main', [
-   function b1 (ret) {console.log('rear2: '  + JSON.stringify(ret)); return 'rear2';},
-   function b2 (ret) {console.log('rear3: '  + JSON.stringify(ret)); return 'rear2';}
-   ])
- .prefix('main', function a (ret) {console.log('prefix1: ' + JSON.stringify(ret)); return 'prefix1';})
- .prefix('main', [
-   function a1 (ret) {console.log('prefix2: '  + JSON.stringify(ret)); return 'prefix2';},
-   function a2 (ret) {console.log('prefix3: '  + JSON.stringify(ret)); return 'prefix3';}
-  ])
- .end();
-
- newTarget
-   .main()
-   .then(console.log, console.error);
-*/
-
 const fnProxyPropName = Symbol('FnProxyConfig');
 const proxyObjPropName = Symbol('proxyObjPropName');
 
@@ -152,4 +124,4 @@ class ProxyObjMethod {
   }
 }
 
-module.exports = ProxyObjMethod;
+module.exports = ProxyObjMethod;  
