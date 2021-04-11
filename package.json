@@ -11,11 +11,11 @@
     "url": "git+https://github.com/Galen-liu/proxy-object-method.git"
   },
   "keywords": [
-    "rear",
-    "prefix",
     "proxy",
+    "method",
+    "prefix",
     "object",
-    "method"
+    "rear"
   ],
   "author": "Galen-liu",
   "license": "MIT",

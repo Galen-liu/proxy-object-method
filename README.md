@@ -1,4 +1,4 @@
-# function-proxy
+# proxy-object-method
 rear or prefix proxy util for object method
 
 # features
